@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading-style{
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+            font-size: 34px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is heading number 1</h2>
+    <button onclick=add()>addstyle</button>
+    <button onclick=remove()>removestyle</button>
+    <script>
+        var heading2 = document.querySelector("h2");
+        function add(){
+            heading2.classList.add("heading-style");
+        }
+        function remove(){
+            heading2.classList.remove("heading-style");
+        }
+    </script>
+</body>
+</html>
